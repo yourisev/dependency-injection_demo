@@ -5,6 +5,7 @@ import com.training.peam.dependencyinjection_demo.controllers.DemoController;
 import com.training.peam.dependencyinjection_demo.controllers.PropertyinjectedController;
 import com.training.peam.dependencyinjection_demo.controllers.SetterinjectedController;
 import com.training.peam.dependencyinjection_demo.examplebeans.FakeDataSource;
+import com.training.peam.dependencyinjection_demo.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -19,6 +20,9 @@ public class DependencyInjectionDemoApplication {
 
         FakeDataSource fakeDataSource = (FakeDataSource) context.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUser());
+
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) context.getBean(FakeJmsBroker.class);
+        System.out.println(fakeJmsBroker.getJmsUserName());
 
     }
 
