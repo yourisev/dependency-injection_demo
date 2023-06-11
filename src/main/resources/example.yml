@@ -1,0 +1,47 @@
+# Some Comment
+
+name: Marcel
+
+names: #Comment identifying a list(array) of names
+  - Marie
+  - Desmond
+  - Ines
+
+pound_sign: "#"
+
+# Object defined below
+book:
+  author: Marcel Mandel
+  publisher: Think Rich
+
+# Boolean tricks all defined below until the next comment
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, False
+
+# Booleans over above
+
+string_val: "This is it's quote"
+#YAML won't appreciate the ' in this string hence we are obliged to enclose the string in double quotes
+
+colon_string: "my courses: one two three"
+#YAML won't appreciate the : in this string hence we are obliged to enclose the string in double quotes
+
+# Multiple line string with new lines included in the string
+include_new_lines: |
+  asdkjgfi jfeyffb
+  dirihoh kjjfhgigvn
+  diugrh fnjghghfo
+  hri
+
+# Multiple line string with new lines ignored in the string
+ignore_new_lines: >
+  This is just
+  one long
+  string
+
